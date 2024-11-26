@@ -66,18 +66,17 @@ python main.py --manual --test_mode
 ## Project Structure
 
 clothing_tracker/
+├── scrapers/                # Modules for fetching data from websites
+│   ├── asos_scraper.py      # ASOS-specific scraping logic
+│   ├── hnm_scraper.py       # H&M-specific scraping logic
 │
-├── scrapers/
-│ ├── asos_scraper.py # ASOS-specific scraping logic
-│ ├── hnm_scraper.py # H&M-specific scraping logic
+├── db/                      # Database management and utilities
+│   ├── database.py          # SQLite database setup and management
 │
-├── db/
-│ ├── database.py # SQLite database setup and management
+├── scheduler/               # Modules for scheduling updates
+│   ├── scheduler.py         # Handles manual and scheduled updates
 │
-├── scheduler/
-│ ├── scheduler.py # Handles manual and scheduled updates
-│
-├── main.py # Entry point for the application
-├── requirements.txt # Project dependencies
-├── .gitignore # Files to ignore in Git
-└── README.md # Project documentation
+├── main.py                  # Entry point for the application
+├── requirements.txt         # Project dependencies
+├── .gitignore               # Files to ignore in Git
+└── README.md                # Project documentation
