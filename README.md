@@ -11,7 +11,7 @@ A Python-based platform for tracking clothing sizes and availability across mult
 
 ## Setup Instructions
 
-### 1. Clone the repository:
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/ch-ezey/clothing-tracker.git
@@ -31,7 +31,7 @@ source env/bin/activate    # On Windows: env\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Run the program:
+### 4. Run the program
 
 ```bash
 python main.py --manual
